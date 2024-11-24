@@ -1,0 +1,10 @@
+*.pyc
+*.sqlite3
+*.wpr
+*.wpu
+*.env
+*.rdb
+__pycache__\*
+*.vscode
+.idea/
+migrations/*

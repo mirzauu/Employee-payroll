@@ -1,0 +1,1361 @@
+Bad Request: /api/employees/emp/
+"POST /api/employees/emp/ HTTP/1.1" 400 133
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 139, in get
+    return Response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1057, in get_fields
+    extra_kwargs, hidden_fields = self.get_uniqueness_extra_kwargs(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1411, in get_uniqueness_extra_kwargs
+    model_fields = self._get_model_fields(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1494, in _get_model_fields
+    if '.' in source or source == '*':
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 147764
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 139, in get
+    return Response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1057, in get_fields
+    extra_kwargs, hidden_fields = self.get_uniqueness_extra_kwargs(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1411, in get_uniqueness_extra_kwargs
+    model_fields = self._get_model_fields(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1494, in _get_model_fields
+    if '.' in source or source == '*':
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 148596
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 139, in get
+    return Response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1057, in get_fields
+    extra_kwargs, hidden_fields = self.get_uniqueness_extra_kwargs(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1411, in get_uniqueness_extra_kwargs
+    model_fields = self._get_model_fields(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1494, in _get_model_fields
+    if '.' in source or source == '*':
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 148923
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 139, in get
+    return Response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1057, in get_fields
+    extra_kwargs, hidden_fields = self.get_uniqueness_extra_kwargs(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1411, in get_uniqueness_extra_kwargs
+    model_fields = self._get_model_fields(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1494, in _get_model_fields
+    if '.' in source or source == '*':
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 148923
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 139, in get
+    return Response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1057, in get_fields
+    extra_kwargs, hidden_fields = self.get_uniqueness_extra_kwargs(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1411, in get_uniqueness_extra_kwargs
+    model_fields = self._get_model_fields(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1494, in _get_model_fields
+    if '.' in source or source == '*':
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 148923
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 139, in get
+    return Response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1057, in get_fields
+    extra_kwargs, hidden_fields = self.get_uniqueness_extra_kwargs(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1411, in get_uniqueness_extra_kwargs
+    model_fields = self._get_model_fields(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1494, in _get_model_fields
+    if '.' in source or source == '*':
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 148923
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Client' object has no attribute 'bank_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 139, in get
+    return Response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `label` on serializer `clientOptionSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Client` instance.
+Original exception text was: 'Client' object has no attribute 'bank_name'.
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 132421
+Internal Server Error: /api/employees/emp/23223/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\employees\apis\views.py", line 61, in put
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\employees\apis\serializers.py", line 64, in validate
+    if Employee.objects.filter(emp_id=emp_id).exists() and self.request.method == 'POST':
+AttributeError: 'EmployeeSerializer' object has no attribute 'request'
+"PUT /api/employees/emp/23223/ HTTP/1.1" 500 127540
+Bad Request: /api/employees/emp/23223/
+"PUT /api/employees/emp/23223/ HTTP/1.1" 400 40
+Internal Server Error: /api/employees/emp/23223/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+apps.employees.models.EmployeeBank.DoesNotExist: EmployeeBank matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\employees\apis\views.py", line 62, in put
+    serializer.update(serializer, serializer.validated_data)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\employees\apis\serializers.py", line 83, in update
+    employee_bank, created = EmployeeBank.objects.get_or_create(employee=instance, bank=bank_data['bank'],
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 923, in get_or_create
+    return self.create(**params), True
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "EmployeeSerializer(<Employee: Test>, context={'request': <rest_framework.request.Request: PUT '/api/employees/emp/23223/'>, 'format': None, 'view': <apps.employees.apis.views.EmployeeDetailsView object>}, data={'emp_id': '23223', 'name': 'Test', 'phone_no': '88833344441', 'whatsappNum': '88833344441', 'email': 'shyam@gmail.com', 'address': 'Test', 'gender': 'male', 'bloodGroup': 'B+', 'uanNumber': '1212112', 'aadhar': '213213213211', 'pan_card': '321321312', 'esi_number': '2321321', 'dob': '2023-10-14', 'designation': '1', 'from_date': '2021-10-01', 'joining_date': '2023-10-10', 'emp_bank': [{'bank': 1, 'accountNumber': '2231321', 'ifscCode': '2123131'}]}):
+    emp_id = CharField(max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    emp_bank = EmployeeBankSerializer(many=True, required=False):
+        bank = PrimaryKeyRelatedField(queryset=Banks.objects.all())
+        accountNumber = CharField(label='AccountNumber', max_length=20)
+        ifscCode = CharField(label='IfscCode', max_length=20)
+    profile_img = ImageField(required=False, validators=[<function _image_format_validation>])
+    pcc_image = ImageField(required=False, validators=[<function _image_format_validation>])
+    aadhar_image = ImageField(required=False, validators=[<function _image_format_validation>])
+    name = CharField(max_length=30)
+    phone_no = CharField(max_length=15, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    whatsappNum = CharField(label='WhatsappNum', max_length=15)
+    email = CharField(allow_blank=True, allow_null=True, max_length=30, required=False)
+    address = CharField(style={'base_template': 'textarea.html'})
+    gender = ChoiceField(choices=(('male', 'Male'), ('female', 'Female'), ('other', 'Other')))
+    bloodGroup = ChoiceField(choices=(('A+', 'A+'), ('A-', 'A-'), ('B+', 'B+'), ('B-', 'B-'), ('AB+', 'AB+'), ('AB-', 'AB-'), ('O+', 'O+'), ('O-', 'O-')), label='BloodGroup')
+    uanNumber = CharField(label='UanNumber', max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    aadhar = CharField(max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    pan_card = CharField(allow_blank=True, allow_null=True, max_length=30, required=False)
+    esiNumber = CharField(allow_blank=True, allow_null=True, label='EsiNumber', max_length=30, required=False)
+    dob = DateField(allow_null=True, required=False)
+    joining_date = DateField()
+    bank_passbook = ImageField(allow_null=True, max_length=100, required=False)
+    is_active = BooleanField(required=False)
+    designation = PrimaryKeyRelatedField(allow_null=True, queryset=Designation.objects.all(), required=False)
+    current_company = PrimaryKeyRelatedField(allow_null=True, queryset=Client.objects.all(), required=False)": "EmployeeBank.employee" must be a "Employee" instance.
+"PUT /api/employees/emp/23223/ HTTP/1.1" 500 202403
+Internal Server Error: /api/employees/emp/23223/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+apps.employees.models.EmployeeBank.DoesNotExist: EmployeeBank matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\employees\apis\views.py", line 62, in put
+    serializer.update(serializer, serializer.validated_data)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\employees\apis\serializers.py", line 83, in update
+    employee_bank, created = EmployeeBank.objects.get_or_create(employee=instance, bank=bank_data['bank'],
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 923, in get_or_create
+    return self.create(**params), True
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "EmployeeSerializer(<Employee: Test>, context={'request': <rest_framework.request.Request: PUT '/api/employees/emp/23223/'>, 'format': None, 'view': <apps.employees.apis.views.EmployeeDetailsView object>}, data={'emp_id': '23223', 'name': 'Test', 'phone_no': '88833344441', 'whatsappNum': '88833344441', 'email': 'shyam@gmail.com', 'address': 'Test', 'gender': 'male', 'bloodGroup': 'B+', 'uanNumber': '1212112', 'aadhar': '213213213211', 'pan_card': '321321312', 'esi_number': '2321321', 'dob': '2023-10-14', 'designation': '1', 'from_date': '2021-10-01', 'joining_date': '2023-10-10', 'emp_bank': [{'bank': 1, 'accountNumber': '2231321', 'ifscCode': '2123131'}]}):
+    emp_id = CharField(max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    emp_bank = EmployeeBankSerializer(many=True, required=False):
+        bank = PrimaryKeyRelatedField(queryset=Banks.objects.all())
+        accountNumber = CharField(label='AccountNumber', max_length=20)
+        ifscCode = CharField(label='IfscCode', max_length=20)
+    profile_img = ImageField(required=False, validators=[<function _image_format_validation>])
+    pcc_image = ImageField(required=False, validators=[<function _image_format_validation>])
+    aadhar_image = ImageField(required=False, validators=[<function _image_format_validation>])
+    name = CharField(max_length=30)
+    phone_no = CharField(max_length=15, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    whatsappNum = CharField(label='WhatsappNum', max_length=15)
+    email = CharField(allow_blank=True, allow_null=True, max_length=30, required=False)
+    address = CharField(style={'base_template': 'textarea.html'})
+    gender = ChoiceField(choices=(('male', 'Male'), ('female', 'Female'), ('other', 'Other')))
+    bloodGroup = ChoiceField(choices=(('A+', 'A+'), ('A-', 'A-'), ('B+', 'B+'), ('B-', 'B-'), ('AB+', 'AB+'), ('AB-', 'AB-'), ('O+', 'O+'), ('O-', 'O-')), label='BloodGroup')
+    uanNumber = CharField(label='UanNumber', max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    aadhar = CharField(max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    pan_card = CharField(allow_blank=True, allow_null=True, max_length=30, required=False)
+    esiNumber = CharField(allow_blank=True, allow_null=True, label='EsiNumber', max_length=30, required=False)
+    dob = DateField(allow_null=True, required=False)
+    joining_date = DateField()
+    bank_passbook = ImageField(allow_null=True, max_length=100, required=False)
+    is_active = BooleanField(required=False)
+    designation = PrimaryKeyRelatedField(allow_null=True, queryset=Designation.objects.all(), required=False)
+    current_company = PrimaryKeyRelatedField(allow_null=True, queryset=Client.objects.all(), required=False)": "EmployeeBank.employee" must be a "Employee" instance.
+"PUT /api/employees/emp/23223/ HTTP/1.1" 500 202403
+Internal Server Error: /api/employees/emp/23223/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+apps.employees.models.EmployeeBank.DoesNotExist: EmployeeBank matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\employees\apis\views.py", line 62, in put
+    serializer.update(serializer, serializer.validated_data)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\employees\apis\serializers.py", line 83, in update
+    employee_bank, created = EmployeeBank.objects.get_or_create(employee=instance, bank=bank_data['bank'],
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 923, in get_or_create
+    return self.create(**params), True
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "EmployeeSerializer(<Employee: Test>, context={'request': <rest_framework.request.Request: PUT '/api/employees/emp/23223/'>, 'format': None, 'view': <apps.employees.apis.views.EmployeeDetailsView object>}, data={'emp_id': '23223', 'name': 'Test', 'phone_no': '88833344441', 'whatsappNum': '88833344441', 'email': 'shyam@gmail.com', 'address': 'Test', 'gender': 'male', 'bloodGroup': 'B+', 'uanNumber': '1212112', 'aadhar': '213213213211', 'pan_card': '321321312', 'esi_number': '2321321', 'dob': '2023-10-14', 'designation': '1', 'from_date': '2021-10-01', 'joining_date': '2023-10-10', 'emp_bank': [{'bank': 1, 'accountNumber': '2231321', 'ifscCode': '2123131'}]}):
+    emp_id = CharField(max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    emp_bank = EmployeeBankSerializer(many=True, required=False):
+        bank = PrimaryKeyRelatedField(queryset=Banks.objects.all())
+        accountNumber = CharField(label='AccountNumber', max_length=20)
+        ifscCode = CharField(label='IfscCode', max_length=20)
+    profile_img = ImageField(required=False, validators=[<function _image_format_validation>])
+    pcc_image = ImageField(required=False, validators=[<function _image_format_validation>])
+    aadhar_image = ImageField(required=False, validators=[<function _image_format_validation>])
+    name = CharField(max_length=30)
+    phone_no = CharField(max_length=15, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    whatsappNum = CharField(label='WhatsappNum', max_length=15)
+    email = CharField(allow_blank=True, allow_null=True, max_length=30, required=False)
+    address = CharField(style={'base_template': 'textarea.html'})
+    gender = ChoiceField(choices=(('male', 'Male'), ('female', 'Female'), ('other', 'Other')))
+    bloodGroup = ChoiceField(choices=(('A+', 'A+'), ('A-', 'A-'), ('B+', 'B+'), ('B-', 'B-'), ('AB+', 'AB+'), ('AB-', 'AB-'), ('O+', 'O+'), ('O-', 'O-')), label='BloodGroup')
+    uanNumber = CharField(label='UanNumber', max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    aadhar = CharField(max_length=20, validators=[<UniqueValidator(queryset=Employee.objects.all())>])
+    pan_card = CharField(allow_blank=True, allow_null=True, max_length=30, required=False)
+    esiNumber = CharField(allow_blank=True, allow_null=True, label='EsiNumber', max_length=30, required=False)
+    dob = DateField(allow_null=True, required=False)
+    joining_date = DateField()
+    bank_passbook = ImageField(allow_null=True, max_length=100, required=False)
+    is_active = BooleanField(required=False)
+    designation = PrimaryKeyRelatedField(allow_null=True, queryset=Designation.objects.all(), required=False)
+    current_company = PrimaryKeyRelatedField(allow_null=True, queryset=Client.objects.all(), required=False)": "EmployeeBank.employee" must be a "Employee" instance.
+"PUT /api/employees/emp/23223/ HTTP/1.1" 500 202403
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\mixins.py", line 10, in get
+    return Response({serializer.data})
+TypeError: unhashable type: 'ReturnList'
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 96878
+Internal Server Error: /api/clients/client-option-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\mixins.py", line 10, in get
+    return Response({serializer.data})
+TypeError: unhashable type: 'ReturnList'
+"GET /api/clients/client-option-list/ HTTP/1.1" 500 96878
+Method Not Allowed: /api/clients/emp-shift/
+"GET /api/clients/emp-shift/ HTTP/1.1" 405 40
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 43
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 43
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 43
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 43
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 43
+Method Not Allowed: /api/clients/emp-shift/
+"GET /api/clients/emp-shift/ HTTP/1.1" 405 10325
+Internal Server Error: /api/clients/emp-shift/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 701, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 629, in get_filter_form
+    queryset = view.get_queryset()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 63, in get_queryset
+    assert self.queryset is not None, (
+AssertionError: 'EmployeeShiftSerializer' should either include a `queryset` attribute, or override the `get_queryset()` method.
+"POST /api/clients/emp-shift/ HTTP/1.1" 500 99951
+Method Not Allowed: /api/clients/emp-shift/
+"GET /api/clients/emp-shift/ HTTP/1.1" 405 10325
+Method Not Allowed: /api/clients/emp-shift/
+"GET /api/clients/emp-shift/ HTTP/1.1" 405 10325
+Internal Server Error: /api/clients/emp-shift/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 701, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 629, in get_filter_form
+    queryset = view.get_queryset()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 63, in get_queryset
+    assert self.queryset is not None, (
+AssertionError: 'EmployeeShiftSerializer' should either include a `queryset` attribute, or override the `get_queryset()` method.
+"POST /api/clients/emp-shift/ HTTP/1.1" 500 99950
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 43
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 43
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 43
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 8
+Internal Server Error: /api/clients/emp-shift/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 701, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 629, in get_filter_form
+    queryset = view.get_queryset()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 63, in get_queryset
+    assert self.queryset is not None, (
+AssertionError: 'EmployeeShiftView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+"POST /api/clients/emp-shift/ HTTP/1.1" 500 99884
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 58
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 58
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 58
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 58
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 18
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 18
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 18
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 18
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 84
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 58
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 78
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 82
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 78
+Bad Request: /api/clients/emp-shift/
+"POST /api/clients/emp-shift/ HTTP/1.1" 400 58
+Method Not Allowed: /api/clients/emp-shift/
+"GET /api/clients/emp-shift/ HTTP/1.1" 405 40
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 42, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 165, in many_init
+    return list_serializer_class(*args, **list_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 591, in __init__
+    self.child.bind(field_name='', parent=self)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 367, in bind
+    assert self.source != field_name, (
+AttributeError: 'ShiftEmpSerializer' object has no attribute 'source'
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 130842
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 42, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 165, in many_init
+    return list_serializer_class(*args, **list_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 591, in __init__
+    self.child.bind(field_name='', parent=self)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 367, in bind
+    assert self.source != field_name, (
+AttributeError: 'ShiftEmpSerializer' object has no attribute 'source'
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 130842
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 42, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 165, in many_init
+    return list_serializer_class(*args, **list_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 591, in __init__
+    self.child.bind(field_name='', parent=self)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 367, in bind
+    assert self.source != field_name, (
+AttributeError: 'ShiftEmpSerializer' object has no attribute 'source'
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 130842
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 42, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 165, in many_init
+    return list_serializer_class(*args, **list_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 591, in __init__
+    self.child.bind(field_name='', parent=self)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 367, in bind
+    assert self.source != field_name, (
+AttributeError: 'ShiftEmpSerializer' object has no attribute 'source'
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 126218
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 42, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 165, in many_init
+    return list_serializer_class(*args, **list_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 591, in __init__
+    self.child.bind(field_name='', parent=self)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 367, in bind
+    assert self.source != field_name, (
+AttributeError: 'ShiftEmpSerializer' object has no attribute 'source'
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 126218
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 42, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 165, in many_init
+    return list_serializer_class(*args, **list_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 591, in __init__
+    self.child.bind(field_name='', parent=self)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 367, in bind
+    assert self.source != field_name, (
+AttributeError: 'ShiftEmpSerializer' object has no attribute 'source'
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 126218
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 42, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 165, in many_init
+    return list_serializer_class(*args, **list_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 591, in __init__
+    self.child.bind(field_name='', parent=self)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 367, in bind
+    assert self.source != field_name, (
+AttributeError: 'ShiftEmpSerializer' object has no attribute 'source'
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 130842
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 42, in list
+    serializer = self.get_serializer(page, many=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 110, in get_serializer
+    return serializer_class(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 122, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 165, in many_init
+    return list_serializer_class(*args, **list_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 591, in __init__
+    self.child.bind(field_name='', parent=self)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\fields.py", line 367, in bind
+    assert self.source != field_name, (
+AttributeError: 'ShiftEmpSerializer' object has no attribute 'source'
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 130842
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\serializers.py", line 122, in to_representation
+    represent = super().to_representation(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1148, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'shift_type' was declared on serializer ShiftEmpSerializer, but has not been included in the 'fields' option.
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 154845
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\serializers.py", line 124, in to_representation
+    represent = super().to_representation(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\serializers.py", line 1148, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'shift_type' was declared on serializer ShiftEmpSerializer, but has not been included in the 'fields' option.
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 154841
+Internal Server Error: /api/clients/emp-shift-list/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Employee is not JSON serializable
+"GET /api/clients/emp-shift-list/ HTTP/1.1" 500 110332
+Method Not Allowed: /api/clients/emp_reassing/60/
+"GET /api/clients/emp_reassing/60/ HTTP/1.1" 405 40
+Method Not Allowed: /api/clients/emp_reassing/60/
+"GET /api/clients/emp_reassing/60/ HTTP/1.1" 405 40
+Internal Server Error: /api/clients/emp_reassing/60/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 551, in get_raw_data_form
+    serializer = view.get_serializer(instance=instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 122, in get_serializer_class
+    assert self.serializer_class is not None, (
+AssertionError: 'ShiftEmployeeDetails' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /api/clients/emp_reassing/60/ HTTP/1.1" 500 101884
+Internal Server Error: /api/clients/emp_reassing/60/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 551, in get_raw_data_form
+    serializer = view.get_serializer(instance=instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 122, in get_serializer_class
+    assert self.serializer_class is not None, (
+AssertionError: 'ShiftEmployeeDetails' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /api/clients/emp_reassing/60/ HTTP/1.1" 500 101884
+Internal Server Error: /api/clients/emp_reassing/60/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 551, in get_raw_data_form
+    serializer = view.get_serializer(instance=instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 122, in get_serializer_class
+    assert self.serializer_class is not None, (
+AssertionError: 'ShiftEmployeeDetails' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /api/clients/emp_reassing/60/ HTTP/1.1" 500 101884
+Internal Server Error: /api/clients/emp_reassing/60/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_put_form = self.get_raw_data_form(data, view, 'PUT', request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\renderers.py", line 551, in get_raw_data_form
+    serializer = view.get_serializer(instance=instance)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 122, in get_serializer_class
+    assert self.serializer_class is not None, (
+AssertionError: 'ShiftEmployeeDetails' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /api/clients/emp_reassing/60/ HTTP/1.1" 500 101884
+Forbidden (CSRF cookie not set.): /api/clients/emp_reassing/60/
+"POST /api/clients/emp_reassing/60/ HTTP/1.1" 403 2870
+Forbidden (CSRF cookie not set.): /api/clients/emp_reassing/60/
+"POST /api/clients/emp_reassing/60/ HTTP/1.1" 403 2870
+Internal Server Error: /api/clients/emp_reassing/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 129, in get
+    emp_instance = Employee.objects.get(emp_id=queryset.emp_id)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+apps.employees.models.Employee.DoesNotExist: Employee matching query does not exist.
+"GET /api/clients/emp_reassing/ HTTP/1.1" 500 105875
+Internal Server Error: /api/clients/emp_reassing/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 130, in get
+    emp_instance = Employee.objects.get(emp_id=queryset.emp_id)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+apps.employees.models.Employee.DoesNotExist: Employee matching query does not exist.
+"GET /api/clients/emp_reassing/ HTTP/1.1" 500 105859
+Internal Server Error: /api/clients/emp_reassing/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 130, in get
+    emp_instance = Employee.objects.get(emp_id=queryset.emp_id)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+apps.employees.models.Employee.DoesNotExist: Employee matching query does not exist.
+"GET /api/clients/emp_reassing/ HTTP/1.1" 500 105866
+Internal Server Error: /api/clients/emp_reassing/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 130, in get
+    emp_instance.current_company = queryset.prev_company.id
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "1": "Employee.current_company" must be a "Client" instance.
+"GET /api/clients/emp_reassing/ HTTP/1.1" 500 101978
+Internal Server Error: /api/clients/emp_reassing/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 130, in get
+    emp_instance.current_company = queryset.prev_company.id
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "1": "Employee.current_company" must be a "Client" instance.
+"GET /api/clients/emp_reassing/ HTTP/1.1" 500 101978
+Internal Server Error: /api/clients/test/
+Traceback (most recent call last):
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\rest_framework\mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Shyam\Desktop\workingFolder\ardev_dev\apps\clients\apis\views.py", line 144, in get_queryset
+    queryset = Employee.objects.filter(company=2)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\Shyam\anaconda3\envs\ardev_env\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'company' into field. Choices are: aadhar, aadhar_image, address, bank_passbook, bloodGroup, created, current_company, current_company_id, designation, designation_id, dob, email, emp_bank, emp_history, emp_id, esiNumber, gender, is_active, joining_date, modified, name, pan_card, pcc_image, phone_no, profile_img, shift_emp, uanNumber, whatsappNum
+"GET /api/clients/test/ HTTP/1.1" 500 151615
